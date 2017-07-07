@@ -5,11 +5,17 @@
   
 
 
-<html class="theme-next mist use-motion" lang="zh-Hans">
+<html class="theme-next pisces use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+
+
+
 
 
 
@@ -68,7 +74,7 @@
 
 <link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
   <meta name="keywords" content="树状数组," />
@@ -80,7 +86,7 @@
 
 
 
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.1" />
 
 
 
@@ -94,7 +100,7 @@
 <meta property="og:url" content="http://yoursite.com/2017/07/02/2017.7.2/index.html">
 <meta property="og:site_name" content="Dogcdt&#39;s Blog">
 <meta property="og:description" content="题目描述HH 有一串由各种漂亮的贝壳组成的项链。HH 相信不同的贝壳会带来好运，所以每次散步完后，他都会随意取出一段贝壳，思考它们所表达的含义。HH 不断地收集新的贝壳，因此，他的项链变得越来越长。有一天，他突然提出了一个问题：某一段贝壳中，包含了多少种不同的贝壳？这个问题很难回答……因为项链实在是太长了。于是，他只好求助睿智的你，来解决这个问题。">
-<meta property="og:updated_time" content="2017-07-03T06:56:58.053Z">
+<meta property="og:updated_time" content="2017-07-04T07:32:29.552Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="洛谷 P1972 [SDOI2009]HH的项链">
 <meta name="twitter:description" content="题目描述HH 有一串由各种漂亮的贝壳组成的项链。HH 相信不同的贝壳会带来好运，所以每次散步完后，他都会随意取出一段贝壳，思考它们所表达的含义。HH 不断地收集新的贝壳，因此，他的项链变得越来越长。有一天，他突然提出了一个问题：某一段贝壳中，包含了多少种不同的贝壳？这个问题很难回答……因为项链实在是太长了。于是，他只好求助睿智的你，来解决这个问题。">
@@ -105,7 +111,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Mist',
+    scheme: 'Pisces',
     sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
     fancybox: true,
     motion: true,
@@ -131,11 +137,7 @@
 
 
 
-  <title> 洛谷 P1972 [SDOI2009]HH的项链 | Dogcdt's Blog </title>
-</head>
-
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
-
+  <title>洛谷 P1972 [SDOI2009]HH的项链 | Dogcdt's Blog</title>
   
 
 
@@ -150,6 +152,10 @@
 
 
 
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
   
   
@@ -203,7 +209,7 @@
       
         
         <li class="menu-item menu-item-archives">
-          <a href="/archives" rel="section">
+          <a href="/archives/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
@@ -213,7 +219,7 @@
       
         
         <li class="menu-item menu-item-tags">
-          <a href="/tags" rel="section">
+          <a href="/tags/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
@@ -255,7 +261,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="栓犬">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="image" content="/uploads/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -267,14 +273,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                洛谷 P1972 [SDOI2009]HH的项链
-              
-            
-          </h1>
+          <h1 class="post-title" itemprop="name headline">洛谷 P1972 [SDOI2009]HH的项链</h1>
         
 
         <div class="post-meta">
@@ -315,7 +314,6 @@
       </header>
     
 
-
     <div class="post-body" itemprop="articleBody">
 
       
@@ -323,12 +321,12 @@
 
       
         <h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><p>HH 有一串由各种漂亮的贝壳组成的项链。HH 相信不同的贝壳会带来好运，所以每次散步完后，他都会随意取出一段贝壳，思考它们所表达的含义。HH 不断地收集新的贝壳，因此，他的项链变得越来越长。有一天，他突然提出了一个问题：某一段贝壳中，包含了多少种不同的贝壳？这个问题很难回答……因为项链实在是太长了。于是，他只好求助睿智的你，来解决这个问题。<br><a id="more"></a></p>
-<h3 id="输入输出格式"><a href="#输入输出格式" class="headerlink" title="输入输出格式"></a>输入输出格式</h3><p>输入格式：</p>
+<h3 id="输入输出格式"><a href="#输入输出格式" class="headerlink" title="输入输出格式"></a>输入输出格式</h3><p><strong>输入格式：</strong></p>
 <p>第一行：一个整数N，表示项链的长度。</p>
 <p>第二行：N 个整数，表示依次表示项链中贝壳的编号（编号为0 到1000000 之间的整数）。</p>
 <p>第三行：一个整数M，表示HH 询问的个数。</p>
 <p>接下来M 行：每行两个整数，L 和R（1 ≤ L ≤ R ≤ N），表示询问的区间。</p>
-<p>输出格式：</p>
+<p><strong>输出格式：</strong></p>
 <p>M 行，每行一个整数，依次表示询问对应的答案。</p>
 <h3 id="输入输出样例"><a href="#输入输出样例" class="headerlink" title="输入输出样例"></a>输入输出样例</h3><blockquote>
 <p>输入样例#1：<br>6<br>1 2 3 4 3 5<br>3<br>1 2<br>3 5<br>2 6<br>输出样例#1：<br>2<br>2<br>4 </p>
@@ -376,7 +374,7 @@
       
 
       
-        
+      
       
 
       
@@ -392,6 +390,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/07/03/2017.7.3/" rel="prev" title="codevs 3305 水果姐逛水果街Ⅱ">
+                codevs 3305 水果姐逛水果街Ⅱ <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -451,7 +453,7 @@
       <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
-               src="/images/avatar.jpg"
+               src="/uploads/avatar.jpg"
                alt="栓犬" />
           <p class="site-author-name" itemprop="name">栓犬</p>
            
@@ -462,8 +464,8 @@
 
           
             <div class="site-state-item site-state-posts">
-              <a href="/archives">
-                <span class="site-state-item-count">3</span>
+              <a href="/archives/">
+                <span class="site-state-item-count">5</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -476,7 +478,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">5</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -488,26 +490,6 @@
 
         <div class="links-of-author motion-element">
           
-            
-              <span class="links-of-author-item">
-                <a href="https://www.luogu.org/space/show?uid=18362" target="_blank" title="洛谷">
-                  
-                    <i class="fa fa-fw fa-globe"></i>
-                  
-                  洛谷
-                </a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="http://weibo.com/5850345074/" target="_blank" title="微博">
-                  
-                    <i class="fa fa-fw fa-weibo"></i>
-                  
-                  微博
-                </a>
-              </span>
-            
-          
         </div>
 
         
@@ -515,33 +497,7 @@
 
         
         
-          <div class="links-of-blogroll motion-element links-of-blogroll-inline">
-            <div class="links-of-blogroll-title">
-              <i class="fa  fa-fw fa-globe"></i>
-              友情链接
-            </div>
-            <ul class="links-of-blogroll-list">
-              
-                <li class="links-of-blogroll-item">
-                  <a href="http://blog.csdn.net/cnyali/" title="廖哥" target="_blank">廖哥</a>
-                </li>
-              
-                <li class="links-of-blogroll-item">
-                  <a href="http://www.cnyali-lk.com/" title="老K" target="_blank">老K</a>
-                </li>
-              
-                <li class="links-of-blogroll-item">
-                  <a href="http://blog.csdn.net/hyj542682306/" title="hyj" target="_blank">hyj</a>
-                </li>
-              
-                <li class="links-of-blogroll-item">
-                  <a href="https://cnyali-czy.github.io/" title="CraZYali" target="_blank">CraZYali</a>
-                </li>
-              
-            </ul>
-          </div>
-        
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=420 src="//music.163.com/outchain/player?type=0&id=784042902&auto=0&height=430"></iframe>
+
         
 
 
@@ -595,7 +551,7 @@
 <div class="theme-info">
   主题 -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Mist
+    NexT.Pisces
   </a>
 </div>
 
@@ -634,7 +590,17 @@
   
 
 
+  
 
+
+
+
+
+
+
+
+
+  
 
 
 
@@ -656,29 +622,42 @@
   
   <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
 
+  
+  <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
 
   
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
-
-
-
-  
-  
-
-  
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
-
+  <script type="text/javascript" src="/lib/canvas-ribbon/canvas-ribbon.js"></script>
 
 
   
 
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.1"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.1"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.1"></script>
 
 
 
@@ -708,12 +687,6 @@
 
 
 
-  
-
-
-
-
-
 
   
 
@@ -726,28 +699,10 @@
   
 
   
-  
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        tex2jax: {
-          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
-          processEscapes: true,
-          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-        }
-      });
-    </script>
 
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax(), i;
-        for (i=0; i < all.length; i += 1) {
-          all[i].SourceElement().parentNode.className += ' has-jax';
-        }
-      });
-    </script>
-    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
   
 
+  
 
   
 
