@@ -1770,7 +1770,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffa81b;
+  background: #b60141;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2932,4 +2932,10 @@ img:hover {
   .post-body {
     text-align: justify;
   }
+}
+body {
+  background: url("https://s1.ax1x.com/2018/11/17/izK5FO.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 50%;
 }
